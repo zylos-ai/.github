@@ -50,11 +50,7 @@ Zylos will guide you through setting up your agent, including Claude Code authen
 
 ## Build Your Own Component
 
-```bash
-zylos create my-component
-```
-
-See [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) for the full guide.
+See [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) for the guide on creating custom components.
 
 ## License
 
