@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/zylos-ai/zylos-core/main/assets/logo.png" alt="Zylos" height="120">
+  <img src="https://raw.githubusercontent.com/zylos-ai/.github/master/assets/logo.png" alt="Zylos" height="120">
 </p>
 
 <h1 align="center">Zylos</h1>
