@@ -75,13 +75,7 @@ docs: improve getting started guide
 
 ## Component Development
 
-To create a new Zylos component, use the [component template](https://github.com/zylos-ai/zylos-component-template):
-
-```bash
-zylos create my-component
-```
-
-Components follow a standard structure with lifecycle hooks, messaging scripts, and PM2 integration. See the template repository for details.
+To create a new Zylos component, see the [component template](https://github.com/zylos-ai/zylos-component-template). It includes lifecycle hooks, messaging scripts, PM2 integration, and an AI development guide.
 
 ## Reporting Issues
 
