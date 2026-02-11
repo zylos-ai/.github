@@ -48,6 +48,16 @@ Zylos will guide you through setting up your agent, including Claude Code authen
 
 See [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) for the guide on creating custom components. Submit it to the [registry](https://github.com/zylos-ai/zylos-registry) so others can install it with one command.
 
+---
+
+## <img src="assets/coco-logo.png" width="28" align="center" /> Built by Coco
+
+Zylos is the open-source core of [Coco](https://coco.xyz) — the AI employee platform.
+
+We built Zylos because we needed it ourselves: a reliable infrastructure to keep AI running 24/7 for real work. Everything in Zylos is battle-tested in production at Coco, serving teams that depend on AI employees every day.
+
+Want a managed experience? [Coco](https://coco.xyz) gives you a ready-to-work AI employee — with persistent memory, multi-channel communication, and skill packages — deployed in 5 minutes.
+
 ## License
 
 All repositories are licensed under [MIT](https://opensource.org/licenses/MIT).
