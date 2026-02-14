@@ -40,6 +40,7 @@ Zylos will guide you through setting up your agent, including Claude Code authen
 | [zylos-core](https://github.com/zylos-ai/zylos-core) | Core CLI — memory, scheduler, communication bridge, self-healing |
 | [zylos-telegram](https://github.com/zylos-ai/zylos-telegram) | Telegram messaging component |
 | [zylos-lark](https://github.com/zylos-ai/zylos-lark) | Lark/Feishu messaging component |
+| [zylos-feishu](https://github.com/zylos-ai/zylos-feishu) | Feishu (飞书) messaging component |
 | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | Browser automation component |
 | [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) | Template for building new components |
 | [zylos-registry](https://github.com/zylos-ai/zylos-registry) | Component registry |
