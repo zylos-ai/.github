@@ -5,7 +5,7 @@
 <h1 align="center">Zylos</h1>
 
 <p align="center">
-  Give your AI a life. Powered by Claude Code.
+  Give your AI a life.
 </p>
 
 <p align="center">
@@ -17,9 +17,9 @@
 
 ---
 
-Claude Code is a genius — but it wakes up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on its own.
+LLMs are geniuses — but they wake up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on their own.
 
-Zylos gives it a life. Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because Claude Code can program, it can evolve — building new skills, integrating new services, growing alongside you.
+Zylos gives it a life. Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. It can program, it can evolve — building new skills, integrating new services, growing alongside you.
 
 ## Quick Start
 
