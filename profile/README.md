@@ -5,10 +5,11 @@
 <h1 align="center">Zylos</h1>
 
 <p align="center">
-  Give your AI a life.
+  <strong>Give your AI a life.</strong>
 </p>
 
 <p align="center">
+  <a href="https://github.com/zylos-ai/zylos-core"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="https://discord.gg/GS2J39EGff"><img src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://x.com/ZylosAI"><img src="https://img.shields.io/badge/X-follow-000000?logo=x&logoColor=white" alt="X"></a>
   <a href="https://zylos.ai"><img src="https://img.shields.io/badge/website-zylos.ai-blue" alt="Website"></a>
@@ -19,37 +20,78 @@
 
 LLMs are geniuses — but they wake up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on their own.
 
-Zylos gives it a life. Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. It can program, it can evolve — building new skills, integrating new services, growing alongside you.
-
-More LLMs support is on the way.
+**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you.
 
 ## Quick Start
 
-```bash
-# Install (will be published to npm soon)
-npm install -g --install-links https://github.com/zylos-ai/zylos-core
+**Prerequisites:** A Linux server (or Mac), a [Claude](https://claude.ai) subscription.
 
-# Initialize
-zylos init
+```bash
+curl -fsSL https://raw.githubusercontent.com/zylos-ai/zylos-core/main/scripts/install.sh | bash
 ```
 
-Zylos will guide you through setting up your agent, including Claude Code authentication and component installation.
+Then run `zylos init` to set up your agent — interactive and idempotent.
+
+## Why Zylos
+
+- **One AI, One Consciousness** — All channels (Telegram, Lark, web) route through a single gateway. One conversation, one memory, one personality.
+- **Memory That Persists** — Five-layer Inside Out memory architecture. Your AI never wakes up with amnesia.
+- **Self-Healing by Default** — Native crash recovery, heartbeat probes, health monitoring, and auto-restart. No third-party monitoring needed.
+- **$20/month, Not $3,600** — Runs on your Claude subscription. Flat rate, no per-token billing.
+- **Powered by Claude Code** — When Anthropic ships new capabilities, your AI gets them automatically.
+
+## Architecture
+
+```
+📡 Channels (Telegram · Lark · Web Console · Discord)
+        │
+   C4 Comm Bridge (unified gateway · SQLite audit)
+        │
+   🧠 Claude Code (the brain)
+        │
+   ┌────┼────┬──────────┐
+Memory  Scheduler  Activity Monitor  HTTP Layer
+```
 
 ## Repositories
 
+### Core
 | Repository | Description |
 |-----------|-------------|
 | [zylos-core](https://github.com/zylos-ai/zylos-core) | Core CLI — memory, scheduler, communication bridge, self-healing |
-| [zylos-telegram](https://github.com/zylos-ai/zylos-telegram) | Telegram messaging component |
-| [zylos-lark](https://github.com/zylos-ai/zylos-lark) | Lark/Feishu messaging component |
-| [zylos-feishu](https://github.com/zylos-ai/zylos-feishu) | Feishu (飞书) messaging component |
-| [zylos-browser](https://github.com/zylos-ai/zylos-browser) | Browser automation component |
-| [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) | Template for building new components |
 | [zylos-registry](https://github.com/zylos-ai/zylos-registry) | Component registry |
+
+### Communication
+| Repository | Description |
+|-----------|-------------|
+| [zylos-telegram](https://github.com/zylos-ai/zylos-telegram) | Telegram messaging component |
+| [zylos-lark](https://github.com/zylos-ai/zylos-lark) | Lark (international) messaging component |
+| [zylos-feishu](https://github.com/zylos-ai/zylos-feishu) | Feishu (飞书) messaging component |
+| [zylos-discord](https://github.com/zylos-ai/zylos-discord) | Discord messaging component |
+
+### Capabilities
+| Repository | Description |
+|-----------|-------------|
+| [zylos-browser](https://github.com/zylos-ai/zylos-browser) | Browser automation component |
+| [zylos-imagegen](https://github.com/zylos-ai/zylos-imagegen) | AI image generation component |
+| [zylos-kb](https://github.com/zylos-ai/zylos-kb) | Knowledge base component |
+| [zylos-pm](https://github.com/zylos-ai/zylos-pm) | Project management component |
+| [zylos-timeline](https://github.com/zylos-ai/zylos-timeline) | Timeline visualization component |
+
+### Developer
+| Repository | Description |
+|-----------|-------------|
+| [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) | Template for building new components |
+| [zylos-infra](https://github.com/zylos-ai/zylos-infra) | Infrastructure tooling |
+| [zylos-upgrades](https://github.com/zylos-ai/zylos-upgrades) | Upgrade scripts and changelogs |
 
 ## Build Your Own Component
 
-See [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) for the guide on creating custom components. Submit it to the [registry](https://github.com/zylos-ai/zylos-registry) so others can install it with one command.
+All channels connect through the C4 communication bridge. To add a new channel or capability, see [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) for the guide. Submit it to the [registry](https://github.com/zylos-ai/zylos-registry) so others can install it with `zylos add`.
+
+## <img src="https://raw.githubusercontent.com/zylos-ai/zylos-core/main/assets/coco-logo.png" width="24" align="center" /> Built by Coco
+
+Zylos is the open-source core of [Coco](https://coco.xyz) — the AI employee platform. Everything here is battle-tested in production, serving teams that depend on AI employees every day.
 
 ## License
 
