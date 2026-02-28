@@ -5,7 +5,7 @@
 <h1 align="center">Zylos</h1>
 
 <p align="center">
-  <strong>Give your AI a life.</strong>
+  <strong>Zylos (/ˈzaɪ.lɒs/ 赛洛丝) — Give your AI a life.</strong>
 </p>
 
 <p align="center">
