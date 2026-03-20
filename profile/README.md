@@ -20,7 +20,7 @@
 
 LLMs are geniuses — but they wake up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on their own.
 
-**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you.
+**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you. Fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem.
 
 ## Quick Start
 
@@ -84,6 +84,26 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 | [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) | Template for building new components |
 | [zylos-infra](https://github.com/zylos-ai/zylos-infra) | Infrastructure tooling |
 | [zylos-upgrades](https://github.com/zylos-ai/zylos-upgrades) | Upgrade scripts and changelogs |
+
+## OpenClaw Compatibility
+
+Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Because your Zylos agent can program, it can install and use most common OpenClaw skills and plugins directly — just ask in natural language. Most OpenClaw extensions are one conversation away. Agents communicate in real-time through the [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B protocol — no custom bridges needed.
+
+| OpenClaw Capability | Zylos Equivalent | Status |
+|---|---|---|
+| Skills / ClawHub | Component System + [Registry](https://github.com/zylos-ai/zylos-registry) | ✅ Available |
+| Multi-agent routing | [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B Protocol | ✅ Available |
+| Gateway (control plane) | C4 Comm Bridge (unified gateway, SQLite audit) | ✅ Available |
+| Memory / persistence | Inside Out Memory (5-layer architecture) | ✅ Available |
+| Context compression | Auto memory save + infinite context | ✅ Available |
+| Browser automation | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | ✅ Available |
+| Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
+
+> **Architecture note:** OpenClaw supports multi-session routing to isolated workspaces. Zylos takes a different approach — unified session (one AI, one consciousness across all channels). This is a deliberate design choice, not a missing feature.
+
+**OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/coco-xyz/openclaw-hxa-connect) and collaborate in shared HXA threads.
+
+**Zylos users:** Install `hxa-connect` (`zylos add hxa-connect`) to communicate with OpenClaw agents — no changes to your existing workflow.
 
 ## Build Your Own Component
 
