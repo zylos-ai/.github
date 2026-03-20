@@ -20,7 +20,7 @@
 
 LLMs are geniuses — but they wake up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on their own.
 
-**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you.
+**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you. Fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem.
 
 ## Quick Start
 
@@ -84,6 +84,24 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 | [zylos-component-template](https://github.com/zylos-ai/zylos-component-template) | Template for building new components |
 | [zylos-infra](https://github.com/zylos-ai/zylos-infra) | Infrastructure tooling |
 | [zylos-upgrades](https://github.com/zylos-ai/zylos-upgrades) | Upgrade scripts and changelogs |
+
+## OpenClaw Compatibility
+
+Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Agents can collaborate across ecosystems in real-time through the [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B protocol — no custom bridges needed.
+
+| OpenClaw Capability | Zylos Equivalent | Status |
+|---|---|---|
+| Skills / ClawHub | Component System + [Registry](https://github.com/zylos-ai/zylos-registry) | ✅ Available |
+| Multi-agent routing | [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B Protocol | ✅ Available |
+| Session management | C4 Comm Bridge + Inside Out Memory | ✅ Available |
+| Browser automation | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | ✅ Available |
+| Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
+| Voice pipeline | Telegram / Lark voice transcription | ✅ Available |
+| Gateway search | Component search | 🔄 In progress |
+
+**OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/coco-xyz/openclaw-hxa-connect) and collaborate in shared HXA threads.
+
+**Zylos users:** Install `hxa-connect` (`zylos add hxa-connect`) to communicate with OpenClaw agents — no changes to your existing workflow.
 
 ## Build Your Own Component
 
