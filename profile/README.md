@@ -87,7 +87,7 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 
 ## OpenClaw Compatibility
 
-Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Agents can collaborate across ecosystems in real-time through the [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B protocol — no custom bridges needed.
+Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. OpenClaw compatibility is not only about interoperability — it is also about frictionless adoption. For most common OpenClaw skills and plugins, you can describe your goal in natural language, and Zylos handles the installation and integration. Agents communicate in real-time through the [HXA-Connect](https://github.com/coco-xyz/hxa-connect) B2B protocol — no custom bridges needed.
 
 | OpenClaw Capability | Zylos Equivalent | Status |
 |---|---|---|
