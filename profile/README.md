@@ -97,7 +97,6 @@ Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/opencl
 | Browser automation | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | ✅ Available |
 | Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
 | Voice pipeline | Telegram / Lark voice transcription | ✅ Available |
-| Gateway search | Component search | 🔄 In progress |
 
 **OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/coco-xyz/openclaw-hxa-connect) and collaborate in shared HXA threads.
 
