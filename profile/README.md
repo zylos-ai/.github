@@ -67,6 +67,7 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 | [zylos-telegram](https://github.com/zylos-ai/zylos-telegram) | Telegram messaging component |
 | [zylos-lark](https://github.com/zylos-ai/zylos-lark) | Lark (international) messaging component |
 | [zylos-feishu](https://github.com/zylos-ai/zylos-feishu) | Feishu (飞书) messaging component |
+| [zylos-wechat](https://github.com/zylos-ai/zylos-wechat) | WeChat (微信) messaging component |
 | [zylos-discord](https://github.com/zylos-ai/zylos-discord) | Discord messaging component |
 
 ### Capabilities
