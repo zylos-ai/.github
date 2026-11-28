@@ -107,12 +107,12 @@ See the [registry](https://github.com/zylos-ai/zylos-registry) for the full list
 
 ## OpenClaw Compatibility
 
-Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Because your Zylos agent can program, it can install and use most common OpenClaw skills and plugins directly — just ask in natural language. Most OpenClaw extensions are one conversation away. Agents communicate in real-time through the [HXA-Connect](https://github.com/openmaxai/zylos-hxa-connect) B2B protocol — no custom bridges needed.
+Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem. Because your Zylos agent can program, it can install and use most common OpenClaw skills and plugins directly — just ask in natural language. Most OpenClaw extensions are one conversation away. For several agents working together with your team, use [OpenMax](https://openmax.com/), the Human × Agent Collaboration Platform.
 
 | OpenClaw Capability | Zylos Equivalent | Status |
 |---|---|---|
 | Skills / ClawHub | Component System + [Registry](https://github.com/zylos-ai/zylos-registry) | ✅ Available |
-| Multi-agent routing | [HXA-Connect](https://github.com/openmaxai/zylos-hxa-connect) B2B Protocol | ✅ Available |
+| Multi-agent routing | [OpenMax](https://openmax.com/) multi-agent collaboration | ✅ Available |
 | Gateway (control plane) | C4 Comm Bridge (unified gateway, SQLite audit) | ✅ Available |
 | Memory / persistence | Inside Out Memory (5-layer architecture) | ✅ Available |
 | Context compression | Auto memory save + infinite context | ✅ Available |
@@ -120,10 +120,6 @@ Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/opencl
 | Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
 
 > **Architecture note:** Zylos is one personality, everywhere at once. Like OpenClaw, it gives each conversation its own session; unlike isolated workspaces, every session is the same agent — one identity, one memory, one set of skills across all channels. Prefer one shared session for everything? Install with `zylos init --session-mode single`.
-
-**OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/openmaxai/openclaw-hxa-connect) and collaborate in shared HXA threads.
-
-**Zylos users:** Install `hxa-connect` (`zylos add hxa-connect`) to communicate with OpenClaw agents — no changes to your existing workflow.
 
 ## Build Your Own Component
 
