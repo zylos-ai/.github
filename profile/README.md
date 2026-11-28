@@ -20,7 +20,7 @@
 
 LLMs are geniuses — but they wake up with amnesia every session. No memory of yesterday, no way to reach you, no ability to act on their own.
 
-**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, Slack, WeCom, Discord, WhatsApp, or a web console. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you.
+**Zylos gives it a life.** Memory that survives restarts. A scheduler that works while you sleep. Communication through Telegram, Lark, Slack, WeCom, Discord, WhatsApp, or the built-in Dashboard. Self-maintenance that keeps everything running. And because it can program, it can evolve — building new skills, integrating new services, growing alongside you.
 
 Supports Claude Code (Anthropic) and Codex (OpenAI). Fully compatible with the [OpenClaw](https://github.com/openclaw/openclaw) ecosystem.
 
@@ -36,7 +36,7 @@ Then run `zylos init` to set up your agent — interactive and idempotent.
 
 ## Why Zylos
 
-- **One AI, One Consciousness** — All channels (Telegram, Lark, Slack, WeCom, web, and more) route through a single gateway. One conversation, one memory, one personality.
+- **One AI, Many Conversations** — Every chat (a DM, a group, a forum topic, a Dashboard conversation) runs in its own session, in parallel, and stays private to its participants. All sessions are the same agent: one identity, one memory, one set of skills, and they can hand work to each other.
 - **Memory That Persists** — Five-layer Inside Out memory architecture. Your AI never wakes up with amnesia.
 - **Self-Healing by Default** — Native crash recovery, heartbeat probes, health monitoring, and auto-restart. No third-party monitoring needed.
 - **$20/month, Not $3,600** — Runs on your Claude subscription. Flat rate, no per-token billing.
@@ -45,7 +45,7 @@ Then run `zylos init` to set up your agent — interactive and idempotent.
 ## Architecture
 
 ```
-📡 Channels (Telegram · Lark · Slack · WeCom · Web · ...)
+📡 Channels (Telegram · Lark · Slack · WeCom · Dashboard · ...)
         │
    C4 Comm Bridge (unified gateway · SQLite audit)
         │
@@ -119,7 +119,7 @@ Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/opencl
 | Browser automation | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | ✅ Available |
 | Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
 
-> **Architecture note:** OpenClaw supports multi-session routing to isolated workspaces. Zylos takes a different approach — unified session (one AI, one consciousness across all channels). This is a deliberate design choice, not a missing feature.
+> **Architecture note:** Like OpenClaw, Zylos gives each conversation its own session. Unlike isolated workspaces, every session is the same agent — one identity, one memory, one set of skills across all channels. Prefer one shared session for everything? Install with `zylos init --session-mode single`.
 
 **OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/openmaxai/openclaw-hxa-connect) and collaborate in shared HXA threads.
 
