@@ -81,6 +81,7 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 | [zylos-line](https://github.com/zylos-ai/zylos-line) | LINE |
 | [zylos-zalo](https://github.com/zylos-ai/zylos-zalo) | Zalo (Bot Platform) |
 | [zylos-a2a](https://github.com/zylos-ai/zylos-a2a) | A2A v1.0 agent-to-agent communication |
+| [zylos-multica](https://github.com/zylos-ai/zylos-multica) | Multica task platform — receive and report task work |
 
 ### Capabilities
 | Repository | Description |
@@ -94,6 +95,8 @@ Memory  Scheduler  Activity Monitor  HTTP Layer
 | [zylos-doccraft](https://github.com/zylos-ai/zylos-doccraft) | Turn dense documents into readable HTML pages |
 | [zylos-verified-search](https://github.com/zylos-ai/zylos-verified-search) | Multi-source, cross-validated fact search |
 | [zylos-recall](https://github.com/zylos-ai/zylos-recall) | Proactive memory retrieval (RAG) |
+| [zylos-plane-client](https://github.com/zylos-ai/zylos-plane-client) | Self-hosted Plane project management |
+| [zylos-lark-group-digest](https://github.com/zylos-ai/zylos-lark-group-digest) | Scheduled Lark group message digests |
 
 ### Developer
 | Repository | Description |
