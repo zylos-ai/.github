@@ -36,7 +36,7 @@ Then run `zylos init` to set up your agent — interactive and idempotent.
 
 ## Why Zylos
 
-- **One Personality, Many Attentions** — Your AI is one personality, with a separate attention for every chat. Each DM, group, forum topic and Dashboard conversation gets its own session, running in parallel and private to its participants, while all of them share one identity, one memory and one set of skills, and can hand work to each other.
+- **One Personality, Everywhere at Once** — Your AI is one personality, present in every chat at the same time. Each DM, group, forum topic and Dashboard conversation gets its own session, running in parallel and private to its participants, while all of them share one identity, one memory and one set of skills, and can hand work to each other.
 - **Memory That Persists** — Five-layer Inside Out memory architecture. Your AI never wakes up with amnesia.
 - **Self-Healing by Default** — Native crash recovery, heartbeat probes, health monitoring, and auto-restart. No third-party monitoring needed.
 - **$20/month, Not $3,600** — Runs on your Claude subscription. Flat rate, no per-token billing.
@@ -119,7 +119,7 @@ Zylos is fully compatible with the [OpenClaw](https://github.com/openclaw/opencl
 | Browser automation | [zylos-browser](https://github.com/zylos-ai/zylos-browser) | ✅ Available |
 | Cron / webhooks | Scheduler (cron, NL input, idle-gating) | ✅ Available |
 
-> **Architecture note:** Zylos is one personality with many attentions. Like OpenClaw, it gives each conversation its own session; unlike isolated workspaces, every session is the same agent — one identity, one memory, one set of skills across all channels. Prefer one shared session for everything? Install with `zylos init --session-mode single`.
+> **Architecture note:** Zylos is one personality, everywhere at once. Like OpenClaw, it gives each conversation its own session; unlike isolated workspaces, every session is the same agent — one identity, one memory, one set of skills across all channels. Prefer one shared session for everything? Install with `zylos init --session-mode single`.
 
 **OpenClaw users:** Connect to Zylos agents via [openclaw-hxa-connect](https://github.com/openmaxai/openclaw-hxa-connect) and collaborate in shared HXA threads.
 
